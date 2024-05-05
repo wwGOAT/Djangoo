@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'books'
+    'books',
+    'courses',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -118,7 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'assets']
+STATICFILES_DIRS = [BASE_DIR / 'assets/',]
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media/'
 
